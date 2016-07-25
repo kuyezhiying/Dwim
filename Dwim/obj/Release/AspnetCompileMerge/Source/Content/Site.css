@@ -1,0 +1,132 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by 
+    */
+input,
+select,
+textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px 20px 5px 20px;
+    color: #555555;
+    border: none;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none !important;
+}
+
+.input-text {
+    border-top: 1px solid cyan;
+    border-bottom: 1px solid cyan;
+}
+
+#tips {
+    line-height:2;
+    border: 1px solid steelblue;
+    background-color: #f2f8f7;
+    border-radius: 5px;
+    padding-left: 20px;
+    box-shadow: #eeeeee 0 0 2px;
+    margin: 0 2px 5px 2px;
+}
+
+.window-head {
+    background-color: deepskyblue;
+    color: white;
+    padding-top: 3px;
+    font-size: 14px;
+    vertical-align: middle;
+    height: 35px;
+}
+
+#content {
+    height: 600px;
+    background-color: #f8ffff;
+    overflow-y: auto;
+}
+
+#send-btn {
+    float: right;
+    margin-top: 10px;
+}
+
+#like-btn {
+    float: right;
+    margin: 0 10px 5px;
+}
+
+#chat-widow {
+    padding-top: 20px;
+}
+
+.candidates-box {
+    background-color: white;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.bot-image {
+    margin-left: 30px;
+    float: left;
+}
+
+.candidates {
+    margin: 0;
+    padding: 0;
+    height: 70px;
+}
+
+.candidate {
+    padding-right: 15px;
+    border: 1px solid gray;
+    height: 70px;
+    margin: 0;
+}
+
+.candidate-text {
+    float: left;
+    width: 90%;
+    line-height: 1.5;
+    vertical-align: middle;
+    overflow-y: auto;
+}
+
+.circle {
+    margin-top: 20px;
+    width: 25px;
+    height: 25px;
+    float: right;
+    display: inline-block;
+}
+
+.selection {
+    border: 2px solid deepskyblue;
+    border-radius: 50%;
+    color: deepskyblue;
+    padding: 2px 3px 5px 2px;
+}
+
+.record {
+    font-size: 14px;
+    background-color: #99e5ff;
+    border-radius: 5px;
+    min-width: 51%;
+    padding: 0 30px 0 10px;
+    float: right;
+    display: inline-block;
+    margin-bottom: 10px;
+}

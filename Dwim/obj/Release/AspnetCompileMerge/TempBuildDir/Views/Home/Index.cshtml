@@ -1,0 +1,59 @@
+﻿<div ng-controller="ChattingController">
+    <div class="jumbotron" id="chat-window">
+        <section class="panel panel-main" style="margin-bottom: 0">
+            <div class="panel-heading window-head">
+                <center>Conversation Window</center>
+            </div>
+            <div class="panel-body" id="content"></div>
+            <div class="panel-footer candidates-box" id="candidates" ng-show="correctPrompt">
+                <div class="row candidates">
+                    <div ng-repeat="candidate in candidates" ng-if="$index < 3">
+                        <div class="col-md-4 candidate">
+                            <span class="candidate-text">{{candidate}}</span>
+                            <div class="circle" ng-click="correctSentence(candidate)"><span class="glyphicon glyphicon-ok selection"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="form-group" style="margin-top: 0">
+            <div class="input-text">
+                <textarea placeholder="" ng-model="userInputs"></textarea>
+            </div>
+            <button class="btn btn-primary" id="send-btn" ng-click="generateCandidates(userInputs)">send</button>
+        </div>
+        <div></div>
+    </div>
+
+    <hr />
+    <div class="row" id="tips">
+        <div>
+            Tips:
+            <ul>
+                <li>
+                    Automatic misspelling and orthographic correction, i.e. "i and my friend goes to schol" --> "my friend and i go to school"
+                </li>
+                <li>
+                    Auto translation and correction in mixed language coversation. i.e. "I like play 功夫" --> "I like playing kung fu"
+                </li>
+                <li>
+                    Reminds user of an unfamiliar word. i.e. "&#64;dwim remind Kung Fu"
+                </li>
+                <li>
+                    On demand translate? i.e. "&#64;dwim translate 功夫"
+                </li>
+                <li>
+                    Tracking on your English improvement ? i.e. "&#64;dwim report" -->  statistic on your last 30 days' misspell/orthographic error
+                </li>
+            </ul>
+        </div>
+        <a href="https://garagehackbox.azurewebsites.net/hackathons/761/projects/38781" class="btn btn-info" id="like-btn">
+            <span class="glyphicon glyphicon-heart"></span> Like Us
+        </a>
+    </div>
+
+</div>
+
+@section scripts {
+    @Scripts.Render("~/bundles/chatting")
+}
