@@ -30,6 +30,9 @@
                 // Correct Sentence
                 sendRequestToMemory: { method: 'GET', params: { action: 'correctsentence' }, isArray: false },
 
+                // Get Bing Entites
+                getBingEntities: { method: 'GET', params: { action: 'getbingentities' }, isArray: false },
+                recognizeBingEntitis: { method: 'GET', params: { action: 'recognizebingentities' }, isArray: false }
             });
         }
     ]);

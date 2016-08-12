@@ -87,3 +87,4 @@ D:\visual studio 2015\Projects\Dwim\Dwim\bin\Microsoft.Owin.Security.MicrosoftAc
 D:\visual studio 2015\Projects\Dwim\Dwim\bin\System.Web.Http.Owin.xml
 D:\visual studio 2015\Projects\Dwim\Dwim\obj\Debug\Dwim.dll
 D:\visual studio 2015\Projects\Dwim\Dwim\obj\Debug\Dwim.pdb
+D:\visual studio 2015\Projects\Dwim\Dwim\obj\Debug\Dwim.csprojResolveAssemblyReference.cache

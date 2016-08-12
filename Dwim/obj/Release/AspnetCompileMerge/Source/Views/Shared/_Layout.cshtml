@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="Dwim Bot" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -26,8 +28,18 @@
         </div>
     </div>
     <div class="bot-image">
-        @*<img src="~/Resources/Images/dwim-bot.png" />*@
+        <img src="~/Resources/Images/dwim-bot.png" />
     </div>
+    @*<div class="sample">
+        <strong>Sample Inputs</strong>
+        <hr />
+        <ul>
+            <li>Howw are you?</li>
+            <li>Nice to meet you.</li>
+            <li>Obama is a famos people.</li>
+            <li>i and my friend goes to schol</li>
+        </ul>
+    </div>*@
     <div class="container body-content">
         @RenderBody()
         <hr />

@@ -42,7 +42,7 @@ app.config(['$httpProvider', function ($httpProvider) {
 * app init
 * 1. Add callback function for error event.
 */
-app.run(function ($rootScope) {
+app.run(['$rootScope', function ($rootScope) {
     $rootScope.errors = [];
     $rootScope.$watchCollection('errors', function (newErrors, oldErrors) {
         if (newErrors !== oldErrors) {
@@ -57,4 +57,4 @@ app.run(function ($rootScope) {
         $(this).popover('hide');
     });
 
-});
+}]);
